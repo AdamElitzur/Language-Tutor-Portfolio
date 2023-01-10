@@ -2,6 +2,10 @@ const hamburger = document.querySelector("#hamburger");
 const nav = document.querySelector("#nav");
 const li = document.querySelectorAll(".nav-element");
 const body = document.querySelector("body");
+const toggleSwitch = document.querySelector(
+  '.theme-switch input[type="checkbox"]'
+);
+
 console.log(li);
 hamburger.addEventListener("click", () => {
   nav.toggleAttribute("data-visible");
@@ -14,3 +18,13 @@ li.forEach(function (elem) {
     body.toggleAttribute("data-visible");
   });
 });
+
+function switchTheme(e) {
+  if (e.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+}
+
+toggleSwitch.addEventListener("change", switchTheme, false);

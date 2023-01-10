@@ -4,64 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" />
+
     <link rel="stylesheet" href="app.css" />
     <title>Omer Moses</title>
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="/" class="logo">Omer</a>
+          <a href="#" class="logo">Omer</a>
           <button id="hamburger" class="mobile-nav-toggle">
-            <img src="images/menu.svg" class="icon-hamburger" alt="" />
+            <img src="images/icons/menu.svg" class="icon-hamburger" alt="" />
           </button>
+
           <nav id="nav" class="nav">
             <ul class="nav-list">
               <li class="nav-element">
-                <a href="/" class="nav-element-link">About</a>
+                <a href="#about" class="nav-element-link">About</a>
               </li>
               <li class="nav-element">
-                <a href="/" class="nav-element-link">Tutoring</a>
+                <a href="#options" class="nav-element-link">Tutoring</a>
               </li>
               <li class="nav-element">
-                <a href="/" class="nav-element-link">Testimonials</a>
+                <a href="#testimonials" class="nav-element-link"
+                  >Testimonials</a
+                >
               </li>
               <li class="nav-element">
-                <a href="/" class="nav-element-link">Contact</a>
+                <a href="#contact" class="nav-element-link">Contact</a>
               </li>
               <li class="nav-element">
-                <button class="work-button">
-                  <a
-                    href="https://www.italki.com/en/teacher/7345268"
-                    class="nav-element-link"
-                    >Work with me</a
-                  >
-                </button>
+                <a
+                  href="https://www.italki.com/en/teacher/7345268"
+                  target="_blank"
+                  class="book-button nav-element-button"
+                  >Work with me</a
+                >
               </li>
             </ul>
           </nav>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container">
           <div class="grid hero-grid">
             <div class="hero-text">
               <h1 class="hero-title">I tutor Hebrew</h1>
               <p class="hero-description">
-                My name is Omer Moshe, passionate about languages and your private
-                Hebrew tutor.
+                My name is Omer Moshe, passionate about languages and your
+                private Hebrew tutor.
               </p>
               <div class="hero-buttons">
-                <button class="hero-book book-button">
-                  <a href="https://www.italki.com/en/teacher/7345268"
-                    >Book a Trial Lesson</a
-                  >
-                </button>
-                <button class="hero-learn-more">
-                  <a href="#about">Learn More</a>
-                </button>
+                <a
+                  href="https://www.italki.com/en/teacher/7345268"
+                  target="_blank"
+                  class="book-button hero-book"
+                  >Book a Trial Lesson</a
+                >
+
+                <a href="#about" class="hero-learn-more">Learn More</a>
               </div>
             </div>
             <div class="hero-image">
@@ -70,9 +81,11 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
-          <h2 class="about-title">I'm Omer, a Hebrew tutor</h2>
+          <h2 class="about-title section-title">
+            I'm Omer, a private Hebrew tutor.
+          </h2>
           <div class="about-text-container">
             <div class="about-text">
               <p class="about-text-english">
@@ -96,17 +109,22 @@
             <div class="about-details">
               <ul class="about-experience">
                 <li>5 star rating</li>
-                <li>Worked with over 100 students</li>
+                <li>Worked with over 100 happy students</li>
                 <li>Over 500 lessons completed</li>
               </ul>
-              <button class="book-button">Book a Trial Lesson</button>
+              <a
+                href="https://www.italki.com/en/teacher/7345268"
+                target="_blank"
+                class="book-button"
+                >Book a Trial Lesson</a
+              >
             </div>
           </div>
         </div>
       </section>
-      <section class="options">
+      <section id="options" class="options">
         <div class="container">
-          <h2 class="options-title">Tutoring Options</h2>
+          <h2 class="options-title section-title">Tutoring Benefits</h2>
           <div class="options-grid">
             <div class="options-card">
               <h3 class="options-card-title">Flexible schedule</h3>
@@ -133,69 +151,90 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="container">
-          <h2 class="testimonials-title">Testimonials</h2>
-          <div class="testimonials-card">
-            <h3 class="testimonials-card-title">Lee Cohen</h3>
-            <span class="testimonials-card-lesson-count"
-              >20 Hebrew lessons</span
-            >
-            <p class="testimonials-card-description">
-              Omer is a very skilled language teacher. He keeps the conversation
-              flowing naturally and really encourages me to speak. I love having
-              class with Omer.
-            </p>
-          </div>
-          <div class="testimonials-card">
-            <h3 class="testimonials-card-title">Howard Scott</h3>
-            <span class="testimonials-card-lesson-count"
-              >21 Hebrew lessons</span
-            >
-            <p class="testimonials-card-description">
-              He is really flexible and likes to encourage you in your learning
-              process. I always have fun and get a lot of practice learning new
-              things.
-            </p>
-          </div>
-          <div class="testimonials-card">
-            <h3 class="testimonials-card-title">Dani</h3>
-            <span class="testimonials-card-lesson-count"
-              >16 Hebrew lessons</span
-            >
-            <p class="testimonials-card-description">
-              Omer is a dedicated teacher and a vvery thoughtfull fellow. I'd
-              recommend him if you want to get challenged while having
-              interesting discussions and learning new vocabulary.
-            </p>
-          </div>
-          <div class="testimonials-card">
-            <h3 class="testimonials-card-title">Ahmed Jaber</h3>
-            <span class="testimonials-card-lesson-count">5 Hebrew lessons</span>
-            <p class="testimonials-card-description">
-              If you want to REALLY learn and at the same time have fun, this is
-              your guy.
-            </p>
+          <h2 class="testimonials-title section-title">Testimonials</h2>
+          <div class="testimonials-grid">
+            <div class="testimonials-card">
+              <h3 class="testimonials-card-title">Lee Cohen</h3>
+              <span class="testimonials-card-lesson-count"
+                >20 Hebrew lessons</span
+              >
+              <p class="testimonials-card-description">
+                Omer is a very skilled language teacher. He keeps the
+                conversation flowing naturally and really encourages me to
+                speak. I love having class with Omer.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <h3 class="testimonials-card-title">Howard Scott</h3>
+              <span class="testimonials-card-lesson-count"
+                >21 Hebrew lessons</span
+              >
+              <p class="testimonials-card-description">
+                He is really flexible and likes to encourage you in your
+                learning process. I always have fun and get a lot of practice
+                learning new things.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <h3 class="testimonials-card-title">Dani</h3>
+              <span class="testimonials-card-lesson-count"
+                >16 Hebrew lessons</span
+              >
+              <p class="testimonials-card-description">
+                Omer is a dedicated teacher and a vvery thoughtfull fellow. I'd
+                recommend him if you want to get challenged while having
+                interesting discussions and learning new vocabulary.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <h3 class="testimonials-card-title">Ahmed Jaber</h3>
+              <span class="testimonials-card-lesson-count"
+                >5 Hebrew lessons</span
+              >
+              <p class="testimonials-card-description">
+                If you want to REALLY learn and at the same time have fun, this
+                is your guy.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="rates">
+      <section id="rates" class="rates">
         <div class="container">
-          <h2 class="rates-title">Class Rates</h2>
-          <div class="rate">
-            <p class="rate-title">30 Minute Trial Lessons</p>
-            <span class="rate-price">$5</span>
-            <button class="book-button">Book a Lesson</button>
-          </div>
-          <div class="rate">
-            <p class="rate-title">Hour Lessons</p>
-            <span class="rate-price">$15 per hour</span>
-            <button class="book-button">Book a Lesson</button>
-          </div>
-          <div class="rate">
-            <p class="rate-title">Package of 10 Hour Lessons</p>
-            <span class="rate-price">$140</span>
-            <button class="book-button">Book Lessons</button>
+          <h2 class="rates-title section-title">Class Rates</h2>
+          <div class="rate-grid">
+            <div class="rate">
+              <p class="rate-title">30 Minute Trial Lessons</p>
+              <span class="rate-price">$5</span>
+              <a
+                href="https://www.italki.com/en/booking/date?teacher_id=7345268&language=hebrew&is_package=0&is_trial=1"
+                target="_blank"
+                class="book-button"
+                >Book a Lesson</a
+              >
+            </div>
+            <div class="rate">
+              <p class="rate-title">Hour Lessons</p>
+              <span class="rate-price">$15 per hour</span>
+              <a
+                href="https://www.italki.com/en/booking/duration?teacher_id=7345268&language=hebrew&course_id=216679&category=CA005"
+                target="_blank"
+                class="book-button"
+                >Book a Lesson</a
+              >
+            </div>
+            <div class="rate">
+              <p class="rate-title">Package of 10 Hour Lessons</p>
+              <span class="rate-price">$140</span>
+              <a
+                href="https://www.italki.com/en/booking/date?course_id=216679&is_package=1&is_trial=0&language=hebrew&price_id=554938&recurring_book_type=normal&session_length=4&teacher_id=7345268"
+                target="_blank"
+                class="book-button"
+                >Book Lessons</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -206,8 +245,33 @@
     <footer>
       <div class="container">
         <a href="/" class="logo">Omer</a>
+        <div class="text">
+          <p>
+            &copy; Created by
+            <a href="https://www.adamelitzur.com/" target="_blank"
+              >Adam Elitzur</a
+            >
+          </p>
+        </div>
         <div class="socials">
-          <h3>Follow Me</h3>
+          <a
+            href="https://twitter.com/adamcandoit"
+            class="socials-twitter"
+            target="_blank"
+            ><img src="images/icons/twitter.svg" alt="Twitter logo"
+          /></a>
+          <a
+            href="https://github.com/AdamElitzur"
+            class="socials-github"
+            target="_blank"
+            ><img src="images/icons/github.svg" alt="Github logo"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/adam-elitzur/"
+            class="socials-linkedin"
+            target="_blank"
+            ><img src="images/icons/linkedin.svg" alt="Linkedin logo"
+          /></a>
         </div>
       </div>
     </footer>
