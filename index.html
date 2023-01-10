@@ -6,50 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="app.css" />
     <title>Omer Moses</title>
   </head>
   <body>
     <header id="header" class="header">
       <div class="container">
+        
         <div class="nav-wrapper">
           <a href="#" class="logo">Omer</a>
           <button id="hamburger" class="mobile-nav-toggle">
             <img src="images/icons/menu.svg" class="icon-hamburger" alt="" />
           </button>
+          <div class="nav-toggle">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
 
-          <nav id="nav" class="nav">
-            <ul class="nav-list">
-              <li class="nav-element">
-                <a href="#about" class="nav-element-link">About</a>
-              </li>
-              <li class="nav-element">
-                <a href="#options" class="nav-element-link">Tutoring</a>
-              </li>
-              <li class="nav-element">
-                <a href="#testimonials" class="nav-element-link"
-                  >Testimonials</a
-                >
-              </li>
-              <li class="nav-element">
-                <a href="#contact" class="nav-element-link">Contact</a>
-              </li>
-              <li class="nav-element">
-                <a
-                  href="https://www.italki.com/en/teacher/7345268"
-                  target="_blank"
-                  class="book-button nav-element-button"
-                  >Work with me</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round"></div>
-            </label>
+            <nav id="nav" class="nav">
+              <ul class="nav-list">
+                <li class="nav-element">
+                  <a href="#about" class="nav-element-link">About</a>
+                </li>
+                <li class="nav-element">
+                  <a href="#options" class="nav-element-link">Tutoring</a>
+                </li>
+                <li class="nav-element">
+                  <a href="#testimonials" class="nav-element-link"
+                    >Testimonials</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <a href="#contact" class="nav-element-link">Contact</a>
+                </li>
+                <li class="nav-element">
+                  <a
+                    href="https://www.italki.com/en/teacher/7345268"
+                    target="_blank"
+                    class="book-button nav-element-button"
+                    >Work with me</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -59,7 +67,7 @@
         <div class="container">
           <div class="grid hero-grid">
             <div class="hero-text">
-              <h1 class="hero-title">I tutor Hebrew</h1>
+              <h1 class="hero-title">I tutor <span class="hebrew">Hebrew</span></h1>
               <p class="hero-description">
                 My name is Omer Moshe, passionate about languages and your
                 private Hebrew tutor.
@@ -239,14 +247,33 @@
         </div>
       </section>
       <section class="contact">
-        <div class="container"></div>
+        <div class="container">
+          <h1 class="contact-title">Get in touch</h1>
+          <form class="contact-form row">
+             <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" required>
+                <label class="label" for="name">Name</label>
+             </div>
+             <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
+             </div>
+             <div class="form-field col x-100">
+                <input id="message" class="input-text js-input" type="text" required>
+                <label class="label" for="message">Message</label>
+             </div>
+             <div class="form-field col x-100 align-center">
+                <input class="submit-btn" type="submit" value="Submit">
+             </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
       <div class="container">
         <a href="/" class="logo">Omer</a>
         <div class="text">
-          <p>
+          <p class="attribution">
             &copy; Created by
             <a href="https://www.adamelitzur.com/" target="_blank"
               >Adam Elitzur</a
