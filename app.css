@@ -282,15 +282,31 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+.toggle-icons {
+  display: flex;
+  justify-content: space-between;
+
+  gap: .3rem;
+
+  align-items: center;
+
+  height: 23px;
+  width: 23px;
+  margin: 0 5px;
+}
 
 /* Hero */
 .hero {
   margin: 5rem 0;
+  /* height: clamp(calc(100vh - 1rem)); */
 }
 .hero-title {
   font-size: 3rem;
@@ -488,7 +504,7 @@ input:checked + .slider:before {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
-  background-color: var(--clr-accent2);
+  background-color: hsl(0, 0%, 90%);
   border-radius: 1rem;
   padding: 0 1rem;
 }
