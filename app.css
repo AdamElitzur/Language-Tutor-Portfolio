@@ -489,9 +489,8 @@ input:checked + .slider:before {
 }
 
 /* Contact */
-
-.contact-title {
-  margin-top: 2rem;
+.contact {
+  margin-top: 5rem;
 }
 
 .contact-form .form-field {
